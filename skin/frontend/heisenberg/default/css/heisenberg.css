@@ -58,6 +58,47 @@
  *
  */
 
+body {
+	font: 12px/1.35 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	color: #363636;
+}
+
+input, select, textarea, button {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+}
+
+.page-title h1, .page-title h2, input, select, textarea, button, a, .form-list label {
+	color: #363636;
+}
+
+h1, .page-title h1 {
+	font-weight: 200;
+	font-size: 2.15em;
+}
+
+h2, .page-title h2, .block .block-title strong {
+	font-weight: 300;
+	font-size: 1.75em;
+}
+
+.block .block-subtitle {
+	font-weight: 300;
+	font-size: 1.4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #131313;
+	font-weight: 600;
+}
+
+strong, .form-list label, .block-progress dt, .data-table th, .header .welcome-msg, button.button span, .availability span, .link-wishlist, .link-compare {
+	font-weight: 600;
+}
+
 .header, .col-main, .footer, .col-right, .col-left, .block, .block .block-title, .page-title, .breadcrumbs, #nav, .sorter, .pager {
 	border: none;
 }
@@ -67,6 +108,7 @@ button.button {
 }
 
 button.button span, button.button span span {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	background: none;
 	color: #333;
 }
