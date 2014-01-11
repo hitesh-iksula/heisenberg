@@ -1,3 +1,63 @@
+/**
+ *
+ *
+ * Structural Layout | START
+ *
+ *
+ */
+
+.page {
+	width: 1152px;
+}
+
+.main, .header, #nav, .footer {
+	width: 98%;
+	padding: 10px 1%;
+}
+
+/* 2-column layout */
+.col2-right-layout .col-main, .col2-left-layout .col-main {
+	width: 72%;
+	padding: 5px 0.5%;
+}
+
+.col2-right-layout .col-right, .col2-left-layout .col-left {
+	width: 24%;
+	padding: 5px 0.5%;
+}
+
+/* 3-column layout */
+.col3-layout .col-wrapper {
+	width: 75%;
+	padding: 5px 0.5%;
+}
+
+.col3-layout .col-wrapper .col-main {
+	width: 67%;
+	margin-left: 1%;
+	padding: 5px 1%;
+}
+
+.col3-layout .col-right, .col3-layout .col-left {
+	width: 21%;
+	padding: 5px 0.5%;
+}
+
+.col3-layout .col-wrapper .col-left {
+	width: 28.3%;
+	padding: 5px 0.5%;
+}
+
+/* ---------------- Structural Layout | END ---------------- */
+
+/**
+ *
+ *
+ * Element Design | START
+ *
+ *
+ */
+
 .header, .col-main, .footer, .col-right, .col-left, .block, .block .block-title, .page-title, .breadcrumbs, #nav, .sorter, .pager {
 	border: none;
 }
@@ -10,3 +70,5 @@ button.button span, button.button span span {
 	background: none;
 	color: #333;
 }
+
+/* ---------------- Element Design | END ---------------- */
