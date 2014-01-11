@@ -1,3 +1,12 @@
-.header, .col-main, .footer, .col-right, .col-left, .block, .block .block-title, .page-title {
+.header, .col-main, .footer, .col-right, .col-left, .block, .block .block-title, .page-title, .breadcrumbs, #nav, .sorter, .pager {
 	border: none;
+}
+
+button.button {
+	border: 1px solid #999;
+}
+
+button.button span, button.button span span {
+	background: none;
+	color: #333;
 }
