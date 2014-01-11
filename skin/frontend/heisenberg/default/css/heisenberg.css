@@ -212,7 +212,7 @@ button.button.btn-cart > span {
 }
 
 .header .logo {
-	margin-top: 2px;
+	margin: 2px 0 0 24px;
 }
 
 .header .links {
@@ -224,8 +224,9 @@ button.button.btn-cart > span {
 }
 
 .header .links .font-awesome {
-	font-size: 1.3em;
-	padding-right: 10px;
+	font-size: 1em;
+	padding-right: 8px;
+	margin-top: 4px;
 }
 
 .header .links .top_link_jacket {
@@ -234,7 +235,7 @@ button.button.btn-cart > span {
 }
 
 .header .links.custom a {
-	padding: 8px 20px;
+	padding: 8px 12px;
 	margin: 0 9px;
 }
 
@@ -258,6 +259,21 @@ button.button.btn-cart > span {
 #nav .level-top > span, .header .links.custom a {
 	font-size: 1.75em;
 	font-weight: 300;
+}
+
+#nav .level-top > span {
+	float: left;
+}
+
+#nav a.level-top .font-awesome {
+	position: inherit;
+	width: auto;
+	float: left;
+	font-size: 1.75em;
+	padding-right: 8px;
+	margin-top: 4px;
+	background: transparent;
+	border: none;
 }
 
 .footer-container li a {

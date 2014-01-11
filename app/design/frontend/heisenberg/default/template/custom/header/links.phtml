@@ -1,19 +1,31 @@
 <div class="links custom">
 	<div class="top_link_jacket">
-		<a href="<?php echo $this->getUrl('about') ?>" rel="About" class="top_link">About</a>
+		<a href="<?php echo $this->getUrl('about') ?>" rel="About" class="top_link">
+			<div class="font-awesome fa fa-info-circle f-left"></div>
+			<div class="f-left">About</div>
+		</a>
 	</div>
 
 	<?php $customerSession = Mage::getSingleton('customer/session'); ?>
 	<?php if($customerSession->isLoggedIn()): ?>
 		<div class="top_link_jacket">
-			<a href="<?php echo $this->getUrl('customer/account') ?>" rel="My Account" class="top_link">My Account</a>
+			<a href="<?php echo $this->getUrl('customer/account') ?>" rel="My Account" class="top_link">
+				<div class="font-awesome fa fa-dashboard f-left"></div>
+				<div class="f-left">My Account</div>
+			</a>
 		</div>
 		<div class="top_link_jacket">
-			<a href="<?php echo $this->getUrl('customer/account/logout') ?>" rel="Log Out" class="top_link">Log Out</a>
+			<a href="<?php echo $this->getUrl('customer/account/logout') ?>" rel="Log Out" class="top_link">
+				<div class="font-awesome fa fa-sign-out f-left"></div>
+				<div class="f-left">Log Out</div>
+			</a>
 		</div>
 	<?php else: ?>
 		<div class="top_link_jacket">
-			<a href="<?php echo $this->getUrl('customer/account/login') ?>" rel="Log In" class="top_link">Log In</a>
+			<a href="<?php echo $this->getUrl('customer/account/login') ?>" rel="Log In" class="top_link">
+				<div class="font-awesome fa fa-sign-in f-left"></div>
+				<div class="f-left">Log In</div>
+			</a>
 		</div>
 	<?php endif; ?>
 
@@ -24,8 +36,11 @@
 				<div class="f-left">My Cart</div>
 			</a>
 		</div>
+		<div class="top_link_jacket type_1">
+			<a href="<?php echo $this->getUrl('checkout/onepage') ?>" rel="Checkout" class="top_link">
+				<div class="font-awesome fa fa-lock f-left"></div>
+				<div class="f-left">Checkout</div>
+			</a>
+		</div>
 	<?php endif; ?>
-	<div class="top_link_jacket type_1">
-		<a href="<?php echo $this->getUrl('checkout/onepage') ?>" rel="Checkout" class="top_link">Checkout</a>
-	</div>
 </div>
