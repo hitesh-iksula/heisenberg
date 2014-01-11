@@ -1,5 +1,12 @@
+::selection {
+	background: #2a95c9;
+}
+::-moz-selection {
+	background: #2a95c9;
+}
+
 .wrapper {
-	background: #FAFAFA;
+	background: #FFF;
 }
 
 .header-container {
@@ -28,4 +35,37 @@
 
 .header-container button span span, #nav li a, #nav li.active a {
 	color: #F2F2F2;
+}
+
+.header .links a, #nav {
+	display: block;
+	background: #810000;
+	border-radius: 12px;
+	box-shadow: inset 1px 2px 3px #690000;
+	padding: 0;
+}
+
+.header .links a {
+	margin: 0 3px;
+	overflow: hidden;
+}
+
+.header .links a:hover, #nav:hover {
+	background: #870000;
+	color: #F6F6F6;
+	box-shadow: inset 0px -1px 3px #690000;
+}
+
+.top_link_jacket.type_1 {
+	background: #8aabb5;
+}
+
+.top_link_jacket.type_1 .top_link {
+	background: #536A81;
+	box-shadow: inset 1px 2px 3px #2F3A46;
+}
+
+.top_link_jacket.type_1 .top_link:hover {
+	background: #335B83;
+	box-shadow: inset 0px -1px 3px #2F3A46;
 }

@@ -1,0 +1,31 @@
+<div class="links custom">
+	<div class="top_link_jacket">
+		<a href="<?php echo $this->getUrl('about') ?>" rel="About" class="top_link">About</a>
+	</div>
+
+	<?php $customerSession = Mage::getSingleton('customer/session'); ?>
+	<?php if($customerSession->isLoggedIn()): ?>
+		<div class="top_link_jacket">
+			<a href="<?php echo $this->getUrl('customer/account') ?>" rel="My Account" class="top_link">My Account</a>
+		</div>
+		<div class="top_link_jacket">
+			<a href="<?php echo $this->getUrl('customer/account/logout') ?>" rel="Log Out" class="top_link">Log Out</a>
+		</div>
+	<?php else: ?>
+		<div class="top_link_jacket">
+			<a href="<?php echo $this->getUrl('customer/account/login') ?>" rel="Log In" class="top_link">Log In</a>
+		</div>
+	<?php endif; ?>
+
+	<?php if(Mage::helper('checkout/cart')->getItemsCount()): ?>
+		<div class="top_link_jacket type_1">
+			<a href="<?php echo $this->getUrl('checkout/cart') ?>" rel="My Cart" class="top_link">
+				<div class="font-awesome fa fa-shopping-cart f-left"></div>
+				<div class="f-left">My Cart</div>
+			</a>
+		</div>
+	<?php endif; ?>
+	<div class="top_link_jacket type_1">
+		<a href="<?php echo $this->getUrl('checkout/onepage') ?>" rel="Checkout" class="top_link">Checkout</a>
+	</div>
+</div>

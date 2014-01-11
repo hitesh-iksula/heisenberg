@@ -34,13 +34,17 @@
         <?php else:?>
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
+
+        <?php echo $this->getChildHtml('topMenu') ?>
+
+        <?php echo $this->getChildHtml('topCustomMenu') ?>
+
         <div class="quick-access">
             <?php echo $this->getChildHtml('topSearch') ?>
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <?php echo $this->getChildHtml('store_language') ?>
+            <!-- <p class="welcome-msg"><?php // echo $this->getChildHtml('welcome') ?> <?php // echo $this->getAdditionalHtml() ?></p> -->
+            <?php // echo $this->getChildHtml('topLinks') ?>
+            <?php // echo $this->getChildHtml('store_language') ?>
         </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
     </div>
 </div>
-<?php echo $this->getChildHtml('topMenu') ?>
