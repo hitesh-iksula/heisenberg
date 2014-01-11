@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<default>
+		<remove name="left.permanent.callout"/>
+		<remove name="right.permanent.callout"/>
+		<remove name="right.poll"/>
+		<remove name="catalog.compare.sidebar"/>
+		<remove name="right.reports.product.viewed"/>
+		<remove name="paypal.partner.right.logo"/>
+
+		<reference name="head">
+			<action method="addCss"><stylesheet>css/heisenberg.css</stylesheet></action>
+		</reference>
+	</default>
+
+</layout>
