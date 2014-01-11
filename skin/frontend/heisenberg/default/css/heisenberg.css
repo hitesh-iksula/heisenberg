@@ -67,32 +67,33 @@ input, select, textarea, button {
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 
-.page-title h1, .page-title h2, input, select, textarea, button, a, .form-list label {
+.page-title h1, .page-title h2, input, select, textarea, button, a, .form-list label, #nav li a {
 	color: #363636;
 }
 
 h1, .page-title h1 {
-	font-weight: 200;
 	font-size: 2.15em;
+	font-weight: 200;
 }
 
 h2, .page-title h2, .block .block-title strong {
-	font-weight: 300;
 	font-size: 1.75em;
-}
-
-.block .block-subtitle {
-	font-weight: 300;
-	font-size: 1.4em;
 }
 
 a {
 	text-decoration: none;
 }
 
-a:hover, a:active {
-	color: #131313;
-	font-weight: 600;
+.block .block-subtitle {
+	font-size: 1.4em;
+}
+
+a:hover, a:active, #nav li.over a, #nav li.active a {
+	color: #0A0A0A;
+}
+
+h2, .page-title h2, .block .block-title strong, .block .block-subtitle, .regular-price .price {
+	font-weight: 300;
 }
 
 strong, .form-list label, .block-progress dt, .data-table th, .header .welcome-msg, button.button span, .availability span, .link-wishlist, .link-compare {
@@ -111,6 +112,20 @@ button.button span, button.button span span {
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	background: none;
 	color: #333;
+}
+
+#nav li a {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.products-grid .product-name {
+	font-size: 1.6em;
+	font-weight: 400;
+}
+
+.regular-price .price {
+	font-size: 1.4em;
 }
 
 /* ---------------- Element Design | END ---------------- */
