@@ -1,0 +1,35 @@
+.wrapper {
+	background: #EEE;
+}
+
+.main {
+	background: #F8F8F8;
+}
+
+.header-container {
+	background: #990000;
+}
+
+#nav {
+	background: #333;
+}
+
+.footer-container {
+	background: #484848;
+}
+
+.header-container, #nav, .footer-container {
+	color: #F2F2F2;
+}
+
+.header-container a, #nav a, .footer-container a {
+	color: #F2F2F2;
+}
+
+#nav li a:hover {
+	color: #EAEAEA;
+}
+
+.header-container button span span, #nav li a, #nav li.active a {
+	color: #F2F2F2;
+}

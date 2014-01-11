@@ -8,11 +8,13 @@
 
 .page {
 	width: 1152px;
+	padding: 0;
 }
 
 .main, .header, #nav, .footer {
 	width: 98%;
 	padding: 10px 1%;
+	margin: 0;
 }
 
 /* 2-column layout */
@@ -105,13 +107,22 @@ strong, .form-list label, .block-progress dt, .data-table th, .header .welcome-m
 }
 
 button.button {
-	border: 1px solid #999;
+	border: 1px solid #DDD;
 }
 
 button.button span, button.button span span {
 	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 	background: none;
 	color: #333;
+}
+
+#nav ul, #nav div {
+	top: 41px;
+	background: #FFF;
+}
+
+#nav ul li {
+	padding: 6px;
 }
 
 #nav li a {
@@ -130,7 +141,11 @@ button.button span, button.button span span {
 
 .products-grid li.item {
 	width: 30.8%;
-	padding: 0 1.5%;
+	padding: 20px 1.5%;
+}
+
+.products-grid li.item:hover {
+	background: #F0F0F0;
 }
 
 .col2-left-layout .products-grid, .col2-right-layout .products-grid {
@@ -149,6 +164,10 @@ button.button span, button.button span span {
 
 button.button.btn-cart {
 	overflow: hidden;
+	margin: 16px 0;
+	background: #FFF;
+	border-radius: 10px;
+	box-shadow: 1px 1px 8px #CCC;
 }
 
 button.button.btn-cart span, button.button.btn-cart span span {
@@ -169,6 +188,35 @@ button.button.btn-cart > span {
 	padding: 0.25em 4% 0.25em 8%;
 	font-size: 2em;
 	line-height: 1em;
+}
+
+.header .links {
+	margin: 6px 0;
+}
+
+.header .links li {
+	float: left;
+}
+
+.header .links a {
+	display: block;
+	padding: 4px 12px;
+	font-size: 1.2em;
+	background: #810000;
+	border-radius: 12px;
+	margin: 0 3px;
+	box-shadow: inset 1px 2px 3px #690000;
+	color: #DDD;
+}
+
+.header .links a:hover {
+	color: #F6F6F6;
+	box-shadow: inset 0px -1px 3px #690000;
+}
+
+.footer-container li a {
+	padding: 4px 12px;
+	display: block;
 }
 
 /* ---------------- Element Design | END ---------------- */

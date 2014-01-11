@@ -11,6 +11,7 @@
 
 		<reference name="head">
 			<action method="addCss"><stylesheet>css/heisenberg.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/red_and_grey.css</stylesheet></action>
 			<action method="addItem"><type>skin_js</type><name>js/jquery-1.9.0.js</name></action>
 			<action method="addItem"><type>skin_js</type><name>js/heisenberg.js</name></action>
 		</reference>
