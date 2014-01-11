@@ -19,7 +19,7 @@
 
 	<catalog_category_view>
 		<reference name="root">
-			<action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+			<action method="setTemplate"><template>page/1column.phtml</template></action>
 		</reference>
 	</catalog_category_view>
 
