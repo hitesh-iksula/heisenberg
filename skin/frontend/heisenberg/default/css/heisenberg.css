@@ -212,7 +212,7 @@ button.button.btn-cart, .product-url-floater {
 	top: 50%;
 	right: -30%;
 	border: none;
-	background: #63C1C6;
+	background: #D82D46;
 	color: #FAFAFA;
 }
 
@@ -236,12 +236,11 @@ button.button.btn-cart:hover {
 .product-url-floater {
 	top: 30%;
 	font-size: 2.5em;
-	background: #D82D46;
+	background: #63C1C6;
 	color: #FAFAFA;
 }
 
 .product-url-floater:hover {
-	background: #D82D46;
 	color: #EEE;
 }
 
