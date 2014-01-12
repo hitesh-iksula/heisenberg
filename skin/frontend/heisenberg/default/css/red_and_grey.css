@@ -38,12 +38,28 @@
 	color: #F2F2F2;
 }
 
-.header .links a, #nav {
+.header .links a, #nav, button.search_button {
 	display: block;
 	background: #4A4A4A;
 	border-radius: 6px;
 	box-shadow: inset 0px -1px 3px #161616;
 	padding: 0;
+}
+
+button.search_button {
+	display: inline;
+	padding: 10px 14px 11px;
+	border-radius: 0 6px 6px 0;
+}
+
+input.top-search-input {
+	width: 200px;
+	padding: 11px;
+	font-size: 1.3em;
+	color: #565656;
+	background: #FAFAFA;
+	border: none;
+	border-radius: 6px 0 0 6px;
 }
 
 .header .links a {

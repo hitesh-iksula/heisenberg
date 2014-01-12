@@ -177,7 +177,7 @@ button.button span, button.button span span {
 }
 
 .products-grid li.item:hover {
-	background: #F8F8F8;
+	background: #EEE;
 }
 
 .col2-left-layout .products-grid, .col2-right-layout .products-grid {
@@ -282,6 +282,19 @@ button.button.btn-cart:hover {
 	margin: 0 9px;
 }
 
+.header .form-search {
+	float: right;
+	text-align: left;
+	padding: 14px 0;
+}
+
+button.search_button {
+	border: none;
+	color: #FAFAFA;
+	padding: 10px 10px 11px;
+	font-size: 1.5em;
+}
+
 .nav-container {
 	float: left;
 	margin: 0 12px 0 40px;
@@ -323,8 +336,8 @@ button.button.btn-cart:hover {
 	width: auto;
 	float: left;
 	font-size: 1.75em;
-	padding-right: 8px;
-	margin-top: 4px;
+	padding-right: 14px;
+	margin-top: 6px;
 	background: transparent;
 	border: none;
 }
