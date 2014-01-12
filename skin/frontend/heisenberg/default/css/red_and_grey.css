@@ -1,8 +1,8 @@
 ::selection {
-	background: #2a95c9;
+	background: #2A95C9;
 }
 ::-moz-selection {
-	background: #2a95c9;
+	background: #2A95C9;
 }
 
 .wrapper {
@@ -10,7 +10,8 @@
 }
 
 .header-container {
-	background: #990000;
+	background: #3C3C3C;
+	border-bottom: 6px solid #63C1C6;
 }
 
 #nav {
@@ -39,37 +40,43 @@
 
 .header .links a, #nav {
 	display: block;
-	background: #810000;
-	border-radius: 12px;
-	box-shadow: inset 1px 2px 3px #690000;
+	background: #4A4A4A;
+	border-radius: 6px;
+	box-shadow: inset 0px -1px 3px #161616;
 	padding: 0;
 }
 
 .header .links a {
 	margin: 0 3px;
 	overflow: hidden;
-	-webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 }
 
 .header .links a:hover, #nav:hover {
-	background: #870000;
+	background: #525252;
 	color: #F6F6F6;
-	box-shadow: inset 0px -1px 3px #690000;
+	box-shadow: inset 0px -1px 3px #161616;
 }
 
 .top_link_jacket.type_1 {
-	background: #8aabb5;
+	background: #63C1C6;
 }
 
-.top_link_jacket.type_1 .top_link {
+.top_link_jacket.type_1 .top_link, .top_link_jacket.type_1 #nav {
 	background: #536A81;
-	box-shadow: inset 1px 2px 3px #2F3A46;
+	box-shadow: inset 0px -1px 3px #2F3A46;
 }
 
-.top_link_jacket.type_1 .top_link:hover {
+.top_link_jacket.type_1 .top_link:hover, .top_link_jacket.type_1 #nav:hover {
 	background: #335B83;
 	box-shadow: inset 0px -1px 3px #2F3A46;
+}
+
+.top_link_jacket.type_transparent {
+	background: #63C1C6;
+	font-size: 1.25em;
+}
+
+.top_link_jacket.type_transparent #nav, .top_link_jacket.type_transparent #nav:hover {
+	background: transparent;
+	box-shadow: none;
 }
