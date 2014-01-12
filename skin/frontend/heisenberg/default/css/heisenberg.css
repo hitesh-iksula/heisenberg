@@ -15,7 +15,7 @@
 	width: 98%;
 	max-width: 1152px;
 	margin: 0 auto;
-	padding-top: 72px;
+	padding-top: 116px;
 }
 
 .header-container {
@@ -74,6 +74,16 @@
 .col3-layout .col-wrapper .col-left {
 	width: 28.3%;
 	padding: 5px 0.5%;
+}
+
+.breadcrumbs {
+	position: fixed;
+	z-index: 2;
+	margin-top: 78px;
+	width: 100%;
+	background: #EEE;
+	font-size: 1.1em;
+	padding: 10px 0;
 }
 
 .vertical-align-middle-parent {
@@ -339,6 +349,15 @@ button.search_button {
 	margin-top: 6px;
 	background: transparent;
 	border: none;
+}
+
+.breadcrumbs .breadcrumb_train {
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.breadcrumbs .breadcrumb-separator {
+	padding: 0 6px;
 }
 
 .footer-container li a {

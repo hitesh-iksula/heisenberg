@@ -26,7 +26,7 @@
 ?>
 <?php if($crumbs && is_array($crumbs)): ?>
 <div class="breadcrumbs">
-    <ul>
+    <ul class="breadcrumb_train">
         <?php foreach($crumbs as $_crumbName=>$_crumbInfo): ?>
             <li class="<?php echo $_crumbName ?>">
             <?php if($_crumbInfo['link']): ?>
@@ -37,7 +37,7 @@
                 <?php echo $this->escapeHtml($_crumbInfo['label']) ?>
             <?php endif; ?>
             <?php if(!$_crumbInfo['last']): ?>
-                <span>/ </span>
+                <div class="font-awesome fa fa-arrow-circle-o-right breadcrumb-separator"></div>
             <?php endif; ?>
             </li>
         <?php endforeach; ?>
