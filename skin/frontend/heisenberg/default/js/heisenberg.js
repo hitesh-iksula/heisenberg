@@ -12,11 +12,11 @@ jQuery(document).ready(function($) {
 
 	$('#nav').click(function(e) {
 		e.preventDefault();
-		$('.header-drawer').slideToggle();
+		$('.header-drawer').slideToggle("fast");
 	});
 
 	$('.close-drawer').click(function() {
-		$('.header-drawer').slideToggle();
+		$('.header-drawer').slideToggle("fast");
 	})
 
 });
