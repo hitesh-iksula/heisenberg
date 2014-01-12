@@ -373,6 +373,33 @@ button.button.btn-cart:hover {
 	padding: 14px 0;
 }
 
+.header-drawer {
+	background: #389FA5;
+	border-top: 6px solid #63C1C6;
+	position: relative;
+	display: none;
+}
+
+.close-drawer {
+	position: absolute;
+	height: 2.5em;
+	width: 10em;
+	bottom: -2.5em;
+	left: 50%;
+	margin-left: -5em;
+	background: #63C1C6;
+	border-radius: 0 0 12px 12px;
+	cursor: pointer;
+}
+
+.close-drawer .font-awesome {
+	display: block;
+	float: none;
+	text-align: center;
+	margin-top: 6px;
+	font-size: 1.5em;
+}
+
 button.search_button {
 	border: none;
 	color: #FAFAFA;
@@ -461,6 +488,62 @@ button.search_button {
     -moz-transition-delay: 0.05s;
     -o-transition-delay: 0.05s;
     transition-delay: 0.05s;
+}
+
+.custom-navigation {
+	position: relative;
+	font-size: 1.1em;
+	width: 100%;
+	max-width: 1152px;
+	margin: 0 auto;
+}
+
+.custom-navigation ul {
+	display: none;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 18em;
+	height: 100%;
+	min-width: 18em;
+	padding: 0;
+	background: #1C7377;
+}
+
+.custom-navigation li.level1 {
+	overflow: hidden;
+}
+
+.custom-navigation .level1 > a {
+	float: left;
+	min-width: 18em;
+	padding: 1em;
+	background: #2E7F83;
+}
+
+.custom-navigation ul.level2 {
+	background: #17696D;
+}
+
+.custom-navigation ul.level3 {
+	background: #116266;
+}
+
+.custom-navigation ul.level4 {
+	background: #096B70;
+}
+
+.custom-navigation a {
+	padding: 1em 2em;
+	display: block;
+}
+
+.custom-navigation li:hover > ul {
+	display: block;
+}
+
+.custom-navigation li:hover > a {
+	background: #0D565A;
 }
 
 /* ---------------- Element Design | END ---------------- */
