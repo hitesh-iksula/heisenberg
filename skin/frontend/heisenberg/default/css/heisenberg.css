@@ -137,7 +137,7 @@ strong, .form-list label, .block-progress dt, .data-table th, .header .welcome-m
 	font-weight: 600;
 }
 
-.header, .col-main, .footer, .col-right, .col-left, .block, .block .block-title, .page-title, .breadcrumbs, #nav, .sorter, .pager {
+.header, .col-main, .footer, .col-right, .col-left, .block, .block .block-title, .page-title, .breadcrumbs, #nav, .sorter, .pager, .buttons-set {
 	border: none;
 }
 
@@ -152,7 +152,7 @@ button.button span, button.button span span {
 }
 
 #nav ul, #nav div {
-	top: 41px;
+	top: 78px;
 	background: #FFF;
 }
 
@@ -315,6 +315,7 @@ button.button.btn-cart:hover {
 
 #nav .level-top > span {
 	float: left;
+	font-weight: 400;
 }
 
 #nav a.level-top .font-awesome {
