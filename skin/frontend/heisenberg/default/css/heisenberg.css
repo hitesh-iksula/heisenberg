@@ -174,6 +174,10 @@ button.button span, button.button span span {
 	padding: 6px;
 }
 
+.category-products {
+	margin-bottom: 4em;
+}
+
 .products-grid {
 	overflow: hidden;
 	border-bottom: none;
@@ -250,6 +254,31 @@ button.button span, button.button span span {
 	display: block;
 }
 
+.products-grid .font-awesome {
+	text-shadow: 1px 1px 3px #777;
+}
+
+.toolbar {
+	overflow: hidden;
+	padding: 1em 0;
+	margin: 1em 0;
+	font-size: 1.1em;
+}
+
+.toolbar .pager {
+	width: 80%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.toolbar .sorter {
+	float: right;
+	width: 18%;
+	margin: 0;
+	padding: 0;
+}
+
 button.button.btn-cart, .product-url-floater {
 	overflow: hidden;
 	border-radius: 50%;
@@ -262,6 +291,7 @@ button.button.btn-cart, .product-url-floater {
 	border: none;
 	background: #D82D46;
 	color: #FAFAFA;
+	opacity: 0.95;
 }
 
 button.button.btn-cart span, button.button.btn-cart span span {
@@ -278,8 +308,9 @@ button.button.btn-cart > span {
 }
 
 button.button.btn-cart:hover {
-	background: #5DB351;
+	background: #C20C26;
 	color: #EEE;
+	opacity: 1;
 }
 
 .product-url-floater {
@@ -292,6 +323,7 @@ button.button.btn-cart:hover {
 .product-url-floater:hover {
 	background: #1899A0;
 	color: #EEE;
+	opacity: 1;
 }
 
 .products-grid li.item:hover button.button.btn-cart, .products-grid li.item:hover .product-url-floater {
@@ -304,11 +336,13 @@ button.button.btn-cart:hover {
 }
 
 .header .logo {
-	margin: 2px 0 0 24px;
+	margin: 2px 3em 0 1em;
 }
 
 .header .links {
 	float: left;
+	background: #363636;
+	padding: 0 2em;
 }
 
 .header .links li {
@@ -348,7 +382,7 @@ button.search_button {
 
 .nav-container {
 	float: left;
-	margin: 0 12px 0 40px;
+	margin: 0;
 }
 
 #nav {
@@ -415,7 +449,7 @@ button.search_button {
 	margin-left: 5%;
 }
 
-.header .links a, .products-grid li.item, .btn-cart, .product-url-floater {
+.header .links a, .products-grid li.item, .btn-cart, .product-url-floater, .top_link_jacket {
 	-webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;

@@ -46,6 +46,10 @@
 	padding: 0;
 }
 
+.header .links a:active, #nav:active, button.search_button:active {
+	box-shadow: inset 1px 1px 3px #161616;
+}
+
 button.search_button {
 	display: inline;
 	padding: 10px 14px 11px;
@@ -90,6 +94,10 @@ input.top-search-input {
 .top_link_jacket.type_transparent {
 	background: #63C1C6;
 	font-size: 1.25em;
+}
+
+.top_link_jacket.type_transparent:hover {
+	background: #1899A0;
 }
 
 .top_link_jacket.type_transparent #nav, .top_link_jacket.type_transparent #nav:hover {
