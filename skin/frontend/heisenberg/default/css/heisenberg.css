@@ -21,7 +21,7 @@
 .header-container {
 	width: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 }
 
 .main, .header, .footer {
@@ -36,6 +36,10 @@
 
 .nav-container {
 	float: left;
+}
+
+.footer {
+	padding: 16px 1% 32px;
 }
 
 /* 1-column layout */
@@ -139,7 +143,7 @@ a:hover, a:active, #nav li.over a, #nav li.active a {
 	color: #0A0A0A;
 }
 
-h2, .page-title h2, .block .block-title strong, .block .block-subtitle, .regular-price .price {
+h2, .page-title h2, .block .block-title strong, .block .block-subtitle, .regular-price .price, .special-price .price, .old-price .price {
 	font-weight: 300;
 }
 
@@ -170,13 +174,22 @@ button.button span, button.button span span {
 	padding: 6px;
 }
 
+.products-grid {
+	overflow: hidden;
+	border-bottom: none;
+}
+
 .products-grid .product-name {
 	font-size: 1.75em;
 	font-weight: 400;
 }
 
-.regular-price .price {
+.regular-price .price, .special-price .price {
 	font-size: 1.75em;
+}
+
+.old-price .price {
+	font-size: 1.25em;
 }
 
 .products-grid li.item {
@@ -184,10 +197,17 @@ button.button span, button.button span span {
 	padding: 20px 1.5%;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 14px;
+	border-bottom: 1px solid #DDD;
 }
 
 .products-grid li.item:hover {
 	background: #EEE;
+	overflow: visible;
+}
+
+.products-grid .price-label {
+	display: none;
 }
 
 .col2-left-layout .products-grid, .col2-right-layout .products-grid {
@@ -212,15 +232,33 @@ button.button span, button.button span span {
 	text-align: center;
 }
 
+.products-grid .price-box {
+	min-height: 48px;
+}
+
+.products-grid .drop-slant-shadow {
+	height: 14px;
+	width: 100%;
+	background: url('../images/design/drop-slant-shadow.png') no-repeat;
+	background-position-x: 84%;
+	position: absolute;
+	bottom: -14px;
+	display: none;
+}
+
+.products-grid li.item:hover .drop-slant-shadow {
+	display: block;
+}
+
 button.button.btn-cart, .product-url-floater {
 	overflow: hidden;
 	border-radius: 50%;
-	height: 64px;
-	width: 64px;
+	height: 56px;
+	width: 56px;
 	text-align: center;
 	position: absolute;
 	top: 50%;
-	right: -30%;
+	right: -24%;
 	border: none;
 	background: #D82D46;
 	color: #FAFAFA;
@@ -240,17 +278,19 @@ button.button.btn-cart > span {
 }
 
 button.button.btn-cart:hover {
+	background: #5DB351;
 	color: #EEE;
 }
 
 .product-url-floater {
-	top: 30%;
+	top: 34%;
 	font-size: 2.5em;
 	background: #63C1C6;
 	color: #FAFAFA;
 }
 
 .product-url-floater:hover {
+	background: #1899A0;
 	color: #EEE;
 }
 
@@ -282,13 +322,15 @@ button.button.btn-cart:hover {
 }
 
 .header .links .top_link_jacket {
-	padding: 14px 0;
+	padding: 16px 0;
 	float: left;
 }
 
 .header .links.custom a {
 	padding: 8px 12px;
 	margin: 0 9px;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
 .header .form-search {
@@ -330,7 +372,7 @@ button.search_button {
 	top: -1px;
 }
 
-#nav .level-top > span, .header .links.custom a {
+#nav .level-top > span {
 	font-size: 1.75em;
 	font-weight: 300;
 }
